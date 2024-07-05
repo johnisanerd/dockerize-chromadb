@@ -10,6 +10,9 @@ services:
       - ./:/app/
     networks:
       - net
+    environment:
+      - CHROMA_SERVER_AUTHN_CREDENTIALS_FILE="~/server.htpasswd"
+      - CHROMA_SERVER_AUTHN_PROVIDER="chromadb.auth.basic_authn.BasicAuthenticationServerProvider"
 
   chroma:
     image: ghcr.io/chroma-core/chroma:latest
@@ -19,6 +22,9 @@ services:
       - 8000:8000
     networks:
       - net
+    environment:
+      - CHROMA_SERVER_AUTHN_CREDENTIALS_FILE="~/server.htpasswd"
+      - CHROMA_SERVER_AUTHN_PROVIDER="chromadb.auth.basic_authn.BasicAuthenticationServerProvider"
 
 volumes:
   index_data:
