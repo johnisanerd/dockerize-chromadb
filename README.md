@@ -13,8 +13,8 @@ Optional:  cleanup any lingering docker-compose nonses:
 
 
 ### Steps to make this work:
-1. Clone the repository -> `git clone https://github.com/johnisanerd/dockerize-chromadb.git`
-3. Move to the directory -> `cd dockerize-chromadb`
+1. Clone the repository: `git clone https://github.com/johnisanerd/dockerize-chromadb.git`
+3. Move to the directory: `cd dockerize-chromadb`
 4. Cleanup: `docker-compose down --rmi all --volumes --remove-orphans`
 5. Cleanup: `docker builder prune -a`
-5. Create containers -> `docker-compose up --build --remove-orphans`
+5. Create containers: `docker-compose up --build --remove-orphans`
