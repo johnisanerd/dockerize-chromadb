@@ -8,13 +8,13 @@ Optional: Needed for Digital Ocean
 
 Optional:  cleanup any lingering docker-compose nonses:
 
-`docker-compose down --rmi all --volumes --remove-orphans`
 
-`docker builder prune -a`
 
 
 
 ### Steps to make this work:
-1. Clone the repository -> git clone https://github.com/johnisanerd/dockerize-chromadb.git
-2. Move to the directory -> cd dockerize-chromadb
-3. Create containers -> docker-compose up --build --remove-orphans
+1. Clone the repository -> `git clone https://github.com/johnisanerd/dockerize-chromadb.git`
+3. Move to the directory -> cd dockerize-chromadb
+4. Cleanup: `docker-compose down --rmi all --volumes --remove-orphans`
+5. Cleanup: `docker builder prune -a`
+5. Create containers -> `docker-compose up --build --remove-orphans`
