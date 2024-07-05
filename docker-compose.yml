@@ -1,18 +1,5 @@
 version: "3.0"
 services:
-  application:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: application
-    container_name: application
-    volumes:
-      - ./:/app/
-    networks:
-      - net
-    environment:
-      - CHROMA_SERVER_AUTHN_CREDENTIALS_FILE="~/server.htpasswd"
-      - CHROMA_SERVER_AUTHN_PROVIDER="chromadb.auth.basic_authn.BasicAuthenticationServerProvider"
 
   chroma:
     image: ghcr.io/chroma-core/chroma:latest
