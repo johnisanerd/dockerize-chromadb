@@ -1,4 +1,4 @@
 numpy
 pandas
 chromadb
-requests==2.31
+requests==2.31  # https://github.com/docker/docker-py/issues/3256
