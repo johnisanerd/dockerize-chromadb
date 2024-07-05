@@ -6,4 +6,4 @@ We create two containers. One container for the application that acts as a chrom
 ### Steps to make this work:
 1. Clone the repository -> git clone https://github.com/abhitatachar2000/dockerize-chromadb.git
 2. Move to the directory -> cd dockerize-chromadb
-3. Create containers -> docker-compose up --build
+3. Create containers -> docker-compose up --build --remove-orphans
