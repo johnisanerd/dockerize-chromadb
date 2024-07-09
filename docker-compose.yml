@@ -5,6 +5,7 @@ services:
     volumes:
       - index_data:/chroma/.chroma/index
       - ~/server.htpasswd:/chroma/config/server.htpasswd
+    restart: unless-stopped
     ports:
       - 8000:8000
     networks:
